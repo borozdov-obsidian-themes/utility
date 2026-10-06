@@ -6,7 +6,9 @@
   "scripts": {
     "lint": "stylelint theme.css",
     "build": "node scripts/build.mjs",
-    "screenshots": "python3 scripts/screenshots.py"
+    "screenshots": "python3 scripts/screenshots.py",
+    "variants": "python3 scripts/variants.py",
+    "variants:sheet": "python3 scripts/variants_sheet.py"
   },
   "devDependencies": {
     "lucide-static": "^1.47.0",

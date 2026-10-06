@@ -19,6 +19,11 @@ screenshot. If a plugin or a CSS snippet is involved, name it.
    macOS with Obsidian and Google Chrome installed, and Pillow for Python. The theme is
    laid over Obsidian's own stylesheet, extracted from the installed app at run time;
    `screenshots/` is rewritten.
+5. The Style Settings variants between the `VARIANTS:GENERATED` markers in section 1
+   are written by `npm run variants` from the sibling theme repositories, cloned side by
+   side (`../<name>/theme.css`); which siblings, and under what label, is set in
+   `scripts/variants_config.py`. Don't edit the block by hand: after changing a sibling or
+   the list, rerun it, then `npm run variants:sheet` to redraw `screenshots/variants.png`.
 
 House rules:
 

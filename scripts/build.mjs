@@ -1,7 +1,8 @@
 // Build the release copy of theme.css into dist/: the same stylesheet without
 // its comments. The repository keeps the explanations; the file users download
 // doesn't need them, and the community directory flags themes over 100 KiB.
-// The first comment stays — it carries the license and the font credits.
+// The first comment stays — it carries the license and the font credits —
+// and so does the @settings block Style Settings reads its options from.
 //
 // Usage: npm run build   (fails on any lint problem or if the file is too big)
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
@@ -16,7 +17,7 @@ const out = join(root, 'dist', 'theme.css');
 const source = await readFile(join(root, 'theme.css'), 'utf8');
 let seenHeader = false;
 const stripped = source
-  .replace(/\/\*[\s\S]*?\*\//g, (comment) => (seenHeader ? '' : ((seenHeader = true), comment)))
+  .replace(/\/\*[\s\S]*?\*\//g, (comment) => (comment.startsWith('/* @settings') ? comment : seenHeader ? '' : ((seenHeader = true), comment)))
   .split('\n').map((line) => line.trimEnd()).join('\n') // what inline comments leave behind
   .replace(/\n{3,}/g, '\n\n'); // gaps where comment blocks stood
 

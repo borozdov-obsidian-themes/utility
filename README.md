@@ -33,8 +33,21 @@ rounded into friendly, human forms: pill buttons, soft cards, inversion as the o
 - A toggle thumb tuned per face so it never disappears against its own track
 - Text colours meet WCAG contrast on both faces
 - The phone layout keeps the same colours and shapes
-- No embedded fonts, so the theme stays around 13 KB
+- No embedded fonts, so the theme stays around 72 KB with every variant
 - No `!important`: every rule can be overridden with a CSS snippet
+
+## Variants
+
+Borozdov Utility also carries the other 20 themes of the collection's cool light minimalism mood. Install the
+[Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, open
+Settings → Style Settings → **Borozdov Utility** → **Variant**, and pick one: Compositor, Beaker, Ledger, Wire, Clinic, Tracing, Easel, Marble, Tessera, Keynote, Cobalt, Flint, Porcelain, Alpine, Archive, Grayscale, Specimen, Vial, Pixel and Blueline.
+
+A variant brings that theme's palette in both modes, its fonts, weights and corners, and
+its tag and highlight colours. The layout — callouts, tables, the sidebar — stays
+Utility's. Fonts a theme embeds on its own aren't carried over; the variant falls back to
+the same system stack. Each theme is still available by itself from its repository.
+
+![Every variant of Borozdov Utility, dark and light](https://raw.githubusercontent.com/borozdov-obsidian-themes/utility/main/screenshots/variants.png)
 
 ## Installation
 
@@ -55,5 +68,5 @@ MIT — see [LICENSE](LICENSE).
 **По-русски.** Тема из коллекции Borozdov. Два лика: светлый «Toolbelt» — чёрные чернила на
 бумаге, и тёмный «Workfloor» — тот же штрих на мягком чёрном столе. Чёрно-белая палитра без
 единого оттенка, но с мягкими, дружелюбными формами: кнопки-пилюли, скруглённые карточки,
-инверсия как единственный акцент. Шрифты не встроены. Устанавливается из каталога:
+инверсия как единственный акцент. Шрифты не встроены. Через плагин Style Settings в теме есть ещё 20 вариантов — остальные темы коллекции в настроении «холодный светлый минимализм». Устанавливается из каталога:
 Настройки → Оформление → Темы → Настроить → Borozdov Utility → Установить и применить.
